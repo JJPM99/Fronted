@@ -1,16 +1,15 @@
-// variables y constantes 
+// funciones en javascript
+function sumTwoNumbers(num1,num2){
+    let sum = num1 + num2;
+    return sum;
+}
 
-name = 'Jose';
-let lastname = 'Puerta';
+function nameUser( name = 'jose'){
 
-const age = 25;
+  let  user_name = `${name} Puerta`;
 
-console.log('Hola! bienvenido ' + name + ' '+ lastname + ', tu edad es: '+age);
+return user_name;
+}
 
-// template string 
-
-let degree = 'Ciencias Computacionales '
-let faculty = 'Fisico-Matematicas'
-
-console.log(`Eres de la carrera de ${degree} y de la facultad de ${faculty}`);
-
+console.log(sumTwoNumbers(2,2));
+console.log(nameUser('jose')); 
