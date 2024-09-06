@@ -1,15 +1,9 @@
-// funciones en javascript
-function sumTwoNumbers(num1,num2){
-    let sum = num1 + num2;
-    return sum;
-}
 
-function nameUser( name = 'jose'){
+// funciones lambda/arrow 
 
-  let  user_name = `${name} Puerta`;
+//haremos el mismo ejemplo de funcion para sumar 2 numeros pero ahora con un arrow function 
 
-return user_name;
-}
+const sum = (a=0, b=0) => a + b;
 
-console.log(sumTwoNumbers(2,2));
-console.log(nameUser('jose')); 
+console.log(sum(5,5));
+
